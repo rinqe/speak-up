@@ -42,7 +42,7 @@ const Header = ({ userRole, setUserRole, isAdminLoggedIn, onAdminLogout }) => {
             Burime
           </Link>
           <Link 
-            to="/cilësimet" 
+            to="/settings" 
             className={`nav-link ${isActive('/settings') ? 'active' : ''}`}
           >
             Settings
