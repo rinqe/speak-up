@@ -1,0 +1,70 @@
+.resource-section {
+  margin-bottom: 3rem;
+}
+
+.resource-section h2 {
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.resource-card, .help-card {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.resource-card h3, .help-card h4 {
+  margin-bottom: 1rem;
+}
+
+.resource-card ul, .help-card p {
+  color: var(--text-secondary);
+}
+
+.resource-card ul {
+  padding-left: 1.5rem;
+}
+
+.resource-card li {
+  margin-bottom: 0.5rem;
+}
+
+.help-contacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.faq-item {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.faq-item h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .resource-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .help-contacts {
+    grid-template-columns: 1fr;
+  }
+}
