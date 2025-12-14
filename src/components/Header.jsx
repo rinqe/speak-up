@@ -9,7 +9,6 @@ const Header = ({ userRole, setUserRole, isAdminLoggedIn, onAdminLogout }) => {
 
   const handleLogout = () => {
     onAdminLogout()
-    // Redirect to home if on admin page
     if (location.pathname === '/admin') {
       window.location.href = '/'
     }

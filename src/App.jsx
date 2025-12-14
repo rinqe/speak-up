@@ -8,6 +8,7 @@ import AdminDashboard from './pages/AdminDashboard'
 import Legal from './pages/Legal'
 import Settings from './pages/Settings'
 import './styles/main.css'
+import Footer from './components/Footer'
 
 function App() {
   const [userRole, setUserRole] = useState('student')
@@ -75,20 +76,10 @@ function App() {
             <Route path="/settings" element={<Settings />} />
           </Routes>
         </main>
-        <Footer />
+        <Footer/>
       </div>
     </Router>
   )
 }
-
-const Footer = () => (
-  <footer className="footer">
-    <div className="footer-content">
-      <p>© 2025 Speak Up – Të gjitha të drejtat e rezervuara</p>
-      <p>Aktiviteti juaj mund të regjistrohet për qëllime sigurie dhe auditimi.</p>
-      <a href="/ligjore">Politika e Privatësisë</a>
-    </div>
-  </footer>
-)
 
 export default App
